@@ -9,11 +9,13 @@ public class Array {
         age[0] = 5;
         age[1] = 8;
         age[2] = 10;
+
         age[3] = 25;
 
         System.out.println(age.length);                 //Gives you the size of the array
         System.out.println(age[2]);                  //Gives you the value at index 2
         System.out.println(Arrays.toString(age));        //Gives you the whole array without loop(Not usually recomended)
+
 
 
 
@@ -23,11 +25,14 @@ public class Array {
             System.out.println(weight[i]);
         }
 
-
-
-
-
+        for(int i=0; i<age.length;i++){
+            if(age[i] == 90){
+                System.out.println("Found at index " + i);
+            }
+          
         Arrays.sort(weight);
         System.out.println(Arrays.toString(weight));
+        }
+
     }
 }
